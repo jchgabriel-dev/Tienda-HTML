@@ -1,0 +1,10 @@
+footer.mainFooter {
+    background-color: red;  
+    width: 100%; 
+    bottom: 0;
+    height: 60px;
+    justify-content: space-between;
+    align-items: center;    
+    z-index: 2;
+    
+}

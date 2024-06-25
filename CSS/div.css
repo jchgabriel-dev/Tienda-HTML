@@ -1,0 +1,36 @@
+div.divColumn {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
+    align-items: center;
+    max-width: 800px;    
+}
+
+
+div.imageList {
+    overflow-x: auto;    
+    background-color: lightgray;
+    padding: 10px;
+    
+    white-space: nowrap;
+    max-width: 300px; 
+    
+    scrollbar-highlight-color: red;  
+    scrollbar-width: none; 
+}
+
+
+
+div.imageList img {
+    display: inline-block;
+    border-radius: 20px;
+    border: transparent;
+    height: 100px;
+    margin: 1px 3px;
+    position: relative;
+    z-index: 1;
+}
+
+div.imageList img:hover {
+    opacity: 0.6;
+}

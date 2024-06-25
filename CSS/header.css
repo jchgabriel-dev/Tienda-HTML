@@ -1,0 +1,115 @@
+header.mainHeader {
+    background-color: #ffffff;
+    height: 50px;
+    position: sticky;
+    width: 100%;    
+    box-shadow: 0px 4px 10px #e7e7e7;
+    text-align: center;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+}
+
+button.navButton {
+    height: 100%;
+    background-color: transparent;   
+    margin: 0px;
+    padding: 0px 12px; 
+    border: transparent;
+    transition-duration: 300ms;
+    position: relative;
+    cursor: pointer;
+
+}
+
+button.navButton::after {
+    content: '';
+    bottom: 0;
+    left: 0;
+    height: 10%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    background-color: #000;
+    transition-duration: 200ms;
+}
+
+button.navButton:hover::after {    
+    background-color: red;
+    height: 20%;
+}
+
+p.navTitle {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;    
+    text-decoration: underline 2px double;
+
+}
+
+button.cartButton {
+    border-radius: 100%;
+    background-color: #ffffff;    
+    border: 0;
+    position: relative;    
+    cursor: pointer;
+}
+
+button.cartButton::after {
+    border-radius: 100%;
+    content: '';
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    background-color: red;
+    opacity: 0;
+    transition-duration: 500ms;
+}
+
+button.cartButton:hover::after {
+    opacity: .5;
+    scale: 1.5;
+}
+
+button.profileButton {
+    border: none;
+    background-color: transparent;
+    padding: 0; 
+    width: 35px; 
+    height: 35px; 
+    border-radius: 100%; 
+    position: relative;
+    cursor: pointer;
+}
+
+
+button.profileButton::after {
+    border-radius: 100%;
+    content: '';
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    background-color: #000;
+    opacity: 0;
+    transition-duration: 500ms;
+}
+
+
+
+button.profileButton:hover::after {
+    opacity: .5;
+    scale: 1.3;
+}
+
+
+button.profileButton img {
+    width: 100%; 
+    height: auto; 
+    display: block; 
+    border-radius: inherit; 
+}

@@ -1,0 +1,22 @@
+div.modal {
+    display: none; 
+    position: absolute;
+    z-index: 1000;
+    height: 100%;
+    top: 100%;
+    right: 0;
+
+}
+
+div.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 240px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+    align-items: flex-start;
+    padding: 8px 10px;
+
+}
+
+
